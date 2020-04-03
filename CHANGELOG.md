@@ -1,4 +1,13 @@
-## [0.0.2] - 02/04/2020.
+## [0.0.3] - 03/04/2020.
+
+Added support for:
+
+* context.isLandscape
+* context.isPortrait
+* context.mediaQueryViewInsets
+* context.mediaQueryViewPadding
+
+## [0.0.2] - 03/04/2020.
 
 * Fixed README.md format issue
 

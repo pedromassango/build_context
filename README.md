@@ -18,6 +18,10 @@ bellow you can see the currently available extensions in the latest version.
 * `context.devicePixelRatio`
 * `context.platformBrightness`
 * `context.textScaleFactor`
+* `context.isLandscape`
+* `context.isPortrait`
+* `context.mediaQueryViewPadding`
+* `context.mediaQueryViewInsets`
 
 #### From the `Navigator` class. Navigate with ease. Available extensions:
 

@@ -5,7 +5,15 @@ extension MediaQueryExt on BuildContext {
 
   EdgeInsets get mediaQueryPadding => MediaQuery.of(this).padding;
 
+  EdgeInsets get mediaQueryViewPadding => MediaQuery.of(this).viewPadding;
+
+  EdgeInsets get mediaQueryViewInsets => MediaQuery.of(this).viewInsets;
+
   Orientation get orientation => MediaQuery.of(this).orientation;
+
+  bool get isLandscape => orientation == Orientation.landscape;
+
+  bool get isPortrait => orientation == Orientation.portrait;
 
   bool get alwaysUse24HourFormat => MediaQuery.of(this).alwaysUse24HourFormat;
 
