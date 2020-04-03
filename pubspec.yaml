@@ -1,0 +1,19 @@
+name: build_context
+description: Access most used properties in your `BuildContext` instance.
+  This package rely on Dart's extension to provide a easy access for the most used properties and functions that depends on the `BuildContext` instance.
+
+version: 0.0.1
+homepage: http://github.com/pedromassango/build_context
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
