@@ -1,3 +1,11 @@
+## [0.0.4] - 04/04/2020.
+
+Added support for:
+
+* context.form.validate()
+* context.form.reset()
+* context.form.save()
+
 ## [0.0.3] - 03/04/2020.
 
 Added support for:

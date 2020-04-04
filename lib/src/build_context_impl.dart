@@ -86,3 +86,19 @@ extension ScaffoldExt on BuildContext {
           shape: shape,
           clipBehavior: clipBehaviour);
 }
+
+class _Form {
+  _Form(this._context);
+
+  final BuildContext _context;
+
+  bool validate() => Form.of(_context).validate();
+
+  void reset() => Form.of(_context).reset();
+
+  void save() => Form.of(_context).save();
+}
+
+extension FormExt on BuildContext {
+  _Form get form => _Form(this);
+}

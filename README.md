@@ -54,13 +54,20 @@ Note: those must be called in the context of a `Scaffold` widget otherwise you m
 * `context.removeCurrentSnackBar()`
 * `context.showBottomSheet()`
 
+#### From `Form.of(context)` class.
+Note: those must be called in the context of a `Scaffold` widget otherwise you might have errors.
+
+* `context.form.validate()`
+* `context.form.reset()`
+* `context.form.save()`
+
 # Install
 
 Add it in your `pubspec.yaml`:
 
 ````yaml
 dependencies:
-  build_context: ^0.0.1
+  build_context: ^0.0.4
 ````
 
 Import it where you want to use it e.g, in your widget's file.
