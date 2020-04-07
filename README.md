@@ -67,7 +67,7 @@ Add it in your `pubspec.yaml`:
 
 ````yaml
 dependencies:
-  build_context: ^0.0.4
+  build_context: ^0.0.5
 ````
 
 Import it where you want to use it e.g, in your widget's file.
