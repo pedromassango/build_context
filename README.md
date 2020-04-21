@@ -3,10 +3,10 @@
 # BuildContext
 
 Access most used properties in your `BuildContext` instance.
-This package rely on Dart's extension to provide a easy access for the most used properties and functions that depends on the `BuildContext` instance.
+This package relies on Dart's extension to provide easy access for the most used properties and functions that depends on the `BuildContext` instance.
 
 # Available Extensions
-This package is updated frequently to add more extensions, 
+I update this package frequently to add more extensions, 
 bellow you can see the currently available extensions in the latest version.
 
 #### From the `MediaQuery`. Access properties right in the `context` instance. Available extensions:
@@ -22,6 +22,13 @@ bellow you can see the currently available extensions in the latest version.
 * `context.isPortrait`
 * `context.mediaQueryViewPadding`
 * `context.mediaQueryViewInsets`
+* `context.mediaQueryShortestSide`
+
+
+* `context.isPhone`
+* `context.isTablet`
+* `context.isSmallTablet`
+* `context.isLargeTablet`
 
 #### From the `Navigator` class. Navigate with ease. Available extensions:
 
@@ -67,7 +74,7 @@ Add it in your `pubspec.yaml`:
 
 ````yaml
 dependencies:
-  build_context: ^0.0.5
+  build_context: ^1.0.0
 ````
 
 Import it where you want to use it e.g, in your widget's file.

@@ -22,6 +22,20 @@ extension MediaQueryExt on BuildContext {
   Brightness get platformBrightness => MediaQuery.of(this).platformBrightness;
 
   double get textScaleFactor => MediaQuery.of(this).textScaleFactor;
+
+  double get mediaQueryShortestSide => mediaQuerySize.shortestSide;
+
+  /// True if the current device is Phone
+  bool get isPhone => (mediaQueryShortestSide < 600);
+
+  /// 600dp: a 7” tablet (600x1024 mdpi).
+  bool get isSmallTablet => (mediaQueryShortestSide >= 600);
+
+  /// 720dp: a 10” tablet (720x1280 mdpi, 800x1280 mdpi, etc).
+  bool get isLargeTablet => (mediaQueryShortestSide >= 720);
+
+  /// True if the current device is Tablet
+  bool get isTablet => isSmallTablet || isLargeTablet;
 }
 
 extension NavigatorExt on BuildContext {

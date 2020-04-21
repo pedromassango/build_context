@@ -1,4 +1,14 @@
 
+## [1.0.0] - 21/04/2020.
+
+Added support for:
+
+* `context.mediaQueryShortestSide`
+* `context.isPhone`
+* `context.isTablet`
+* `context.isSmallTablet`
+* `context.isLargeTablet`
+
 ## [0.0.5] - 07/04/2020.
 
 * Code format
