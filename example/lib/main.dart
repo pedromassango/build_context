@@ -1,8 +1,15 @@
+import 'package:example/pages/focus_scope.dart';
+import 'package:example/pages/form.dart';
 import 'package:flutter/material.dart';
 
 import 'package:build_context/build_context.dart';
 
 void main() => runApp(MyApp());
+
+class Routes {
+  static const focusScope = '/focusScopePage';
+  static const form = '/formPage';
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -13,26 +20,43 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white24,
         primaryTextTheme: TextTheme(
-          title: TextStyle(color: Colors.blue)
-        )
+          title: TextStyle(color: Colors.blue),
+        ),
       ),
-      home: MyHomePage(),
+      home: HomePage(),
+      routes: {
+        Routes.focusScope: (_) => FocusScopePage(),
+        Routes.form: (_) => FormPage(),
+      },
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.scaffoldBackgroundColor,
       appBar: AppBar(),
       body: Center(
-        child: GestureDetector(
-          onTap: () => context.pushNamed('/detailsPage'),
-          child: Text(
-            'Press Me',
-            style: context.primaryTextTheme.title,
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              MaterialButton(
+                onPressed: () => context.pushNamed(Routes.form),
+                child: Text(
+                  'Form Example',
+                  style: context.primaryTextTheme.title,
+                ),
+              ),
+              MaterialButton(
+                onPressed: () => context.pushNamed(Routes.focusScope),
+                child: Text(
+                  'Focus Scope Example',
+                  style: context.primaryTextTheme.title,
+                ),
+              ),
+            ],
           ),
         ),
       ),

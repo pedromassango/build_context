@@ -116,3 +116,20 @@ class _Form {
 extension FormExt on BuildContext {
   _Form get form => _Form(this);
 }
+
+class _FocusScope {
+  _FocusScope(this._context);
+
+  final BuildContext _context;
+
+  void unfocus() {
+    FocusScopeNode currentFocus = FocusScope.of(_context);
+    if (!currentFocus.hasPrimaryFocus) {
+      currentFocus.unfocus();
+    }
+  }
+}
+
+extension FocusScopeExt on BuildContext {
+  _FocusScope get focusScope => _FocusScope(this);
+}

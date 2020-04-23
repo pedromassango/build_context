@@ -68,6 +68,10 @@ Note: those must be called in the context of a `Scaffold` widget otherwise you m
 * `context.form.reset()`
 * `context.form.save()`
 
+#### From `FocusScope.of(context)` class.
+
+* `context.focusScope.unfocus()`
+
 # Install
 
 Add it in your `pubspec.yaml`:
