@@ -70,7 +70,17 @@ Note: those must be called in the context of a `Scaffold` widget otherwise you m
 
 #### From `FocusScope.of(context)` class.
 
+* `context.focusScope.hasFocus`
+* `context.focusScope.isFirstFocus`
+* `context.focusScope.canRequestFocus`
+* `context.focusScope.hasPrimaryFocus`
+
 * `context.focusScope.unfocus()`
+* `context.focusScope.nextFocus()`
+* `context.focusScope.requestFocus()`
+* `context.focusScope.previousFocus()`
+* `context.focusScope.setFirstFocus()`
+* `context.focusScope.consumeKeyboardToken()`
 
 # Install
 
@@ -78,7 +88,7 @@ Add it in your `pubspec.yaml`:
 
 ````yaml
 dependencies:
-  build_context: ^1.0.0
+  build_context: ^1.1.0
 ````
 
 Import it where you want to use it e.g, in your widget's file.
@@ -87,7 +97,7 @@ Import it where you want to use it e.g, in your widget's file.
 import "package:build_context/build_context.dart";
 ```
 
-Here is an usage example:
+Here is a usage example:
 
 ```dart
 import 'package:flutter/material.dart';

@@ -1,4 +1,21 @@
 
+## [1.1.0] - 23/04/2020.
+
+* Added support for:
+
+* `context.focusScope.hasFocus`
+* `context.focusScope.isFirstFocus`
+* `context.focusScope.canRequestFocus`
+* `context.focusScope.hasPrimaryFocus`
+
+
+* `context.focusScope.unfocus()`
+* `context.focusScope.nextFocus()`
+* `context.focusScope.requestFocus()`
+* `context.focusScope.previousFocus()`
+* `context.focusScope.setFirstFocus()`
+* `context.focusScope.consumeKeyboardToken()`
+
 ## [1.0.0] - 21/04/2020.
 
 Added support for:
@@ -17,18 +34,18 @@ Added support for:
 
 Added support for:
 
-* context.form.validate()
-* context.form.reset()
-* context.form.save()
+* `context.form.validate()`
+* `context.form.reset()`
+* `context.form.save()`
 
 ## [0.0.3] - 03/04/2020.
 
 Added support for:
 
-* context.isLandscape
-* context.isPortrait
-* context.mediaQueryViewInsets
-* context.mediaQueryViewPadding
+* `context.isLandscape`
+* `context.isPortrait`
+* `context.mediaQueryViewInsets`
+* `context.mediaQueryViewPadding`
 
 ## [0.0.2] - 03/04/2020.
 
@@ -36,9 +53,9 @@ Added support for:
 
 ## [0.0.1] - 02/04/2020.
 
-Added support for: 
+Added support for the following classes: 
 
-* MediaQuery
-* Theme
-* Navigator
-* Scaffold
+* `MediaQuery`
+* `Theme`
+* `Navigator`
+* `Scaffold`
