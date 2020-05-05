@@ -79,10 +79,12 @@ extension ScaffoldExt on BuildContext {
           SnackBar snackbar) =>
       Scaffold.of(this).showSnackBar(snackbar);
 
-  void removeCurrentSnackBar(SnackBarClosedReason reason) =>
+  void removeCurrentSnackBar(
+          {SnackBarClosedReason reason = SnackBarClosedReason.remove}) =>
       Scaffold.of(this).removeCurrentSnackBar(reason: reason);
 
-  void hideCurrentSnackBar(SnackBarClosedReason reason) =>
+  void hideCurrentSnackBar(
+          {SnackBarClosedReason reason = SnackBarClosedReason.hide}) =>
       Scaffold.of(this).hideCurrentSnackBar(reason: reason);
 
   void openDrawer() => Scaffold.of(this).openDrawer();
@@ -121,7 +123,7 @@ class _FocusScope {
   const _FocusScope(this._context);
 
   final BuildContext _context;
-  
+
   FocusScopeNode _node() => FocusScope.of(_context);
 
   bool get hasFocus => _node().hasFocus;
@@ -133,9 +135,9 @@ class _FocusScope {
   bool get canRequestFocus => _node().canRequestFocus;
 
   void nextFocus() => _node().nextFocus();
-  
+
   void requestFocus([FocusNode node]) => _node().requestFocus(node);
-  
+
   void previousFocus() => _node().previousFocus();
 
   void unfocus([bool focusPrevious = false]) =>

@@ -88,7 +88,7 @@ Add it in your `pubspec.yaml`:
 
 ````yaml
 dependencies:
-  build_context: ^1.1.0
+  build_context: ^1.1.1
 ````
 
 Import it where you want to use it e.g, in your widget's file.

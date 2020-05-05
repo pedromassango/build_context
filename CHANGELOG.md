@@ -1,4 +1,8 @@
 
+## [1.1.1] - 23/04/2020.
+
+Reasons to removeCurrentSnackBar and hideCurrentSnackBar are now optional as in the default implementation
+
 ## [1.1.0] - 23/04/2020.
 
 * Added support for:
