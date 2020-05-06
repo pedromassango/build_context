@@ -1,6 +1,6 @@
 name: build_context
 description: A package that simplifies the access most of used properties/fuctions right in the BuildContext.
-version: 1.1.1
+version: 2.0.0
 homepage: https://github.com/pedromassango/build_context
 
 environment:

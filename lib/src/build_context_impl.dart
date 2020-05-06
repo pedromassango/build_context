@@ -41,7 +41,7 @@ extension MediaQueryExt on BuildContext {
 extension NavigatorExt on BuildContext {
   Future<T> push<T>(Route<T> route) => Navigator.push(this, route);
 
-  bool pop<T>(T result) => Navigator.pop(this, result);
+  void pop<T extends Object>(T result) => Navigator.pop(this, result);
 
   Future<Object> pushNamed<T>(String routeName, {Object arguments}) =>
       Navigator.pushNamed(this, routeName, arguments: arguments);
@@ -140,8 +140,8 @@ class _FocusScope {
 
   void previousFocus() => _node().previousFocus();
 
-  void unfocus([bool focusPrevious = false]) =>
-      _node().unfocus(focusPrevious: focusPrevious);
+  void unfocus({UnfocusDisposition disposition = UnfocusDisposition.scope}) =>
+      _node().unfocus(disposition: disposition);
 
   void setFirstFocus(FocusScopeNode scope) => _node().setFirstFocus(scope);
 

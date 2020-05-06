@@ -1,4 +1,11 @@
 
+## [2.0.0] - 23/04/2020.
+
+This is a breaking change for users of the bellow functions:
+
+* `context.pop()` now returns void as the default function (Flutter 1.17.0)
+* `context.unfocus()` now receive [UnfocusDisposition] as optional argument (Flutter 1.17.0)
+
 ## [1.1.1] - 23/04/2020.
 
 Reasons to removeCurrentSnackBar and hideCurrentSnackBar are now optional as in the default implementation
