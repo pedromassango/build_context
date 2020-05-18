@@ -40,6 +40,7 @@ bellow you can see the currently available extensions in the latest version.
 
 #### From the `Theme` class. Access your themes right in the `context` instance. Available extensions:
 
+* `context.theme`
 * `context.textTheme`
 * `context.primaryTextTheme`
 * `context.accentTextTheme`
