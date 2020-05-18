@@ -41,7 +41,7 @@ extension MediaQueryExt on BuildContext {
 extension NavigatorExt on BuildContext {
   Future<T> push<T>(Route<T> route) => Navigator.push(this, route);
 
-  void pop<T extends Object>(T result) => Navigator.pop(this, result);
+  void pop<T extends Object>([T result]) => Navigator.pop(this, result);
 
   Future<Object> pushNamed<T>(String routeName, {Object arguments}) =>
       Navigator.pushNamed(this, routeName, arguments: arguments);

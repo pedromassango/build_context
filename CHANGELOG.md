@@ -1,4 +1,8 @@
 
+## [2.0.1] - 23/04/2020.
+
+* `context.pop()` param value is now optional
+
 ## [2.0.0] - 23/04/2020.
 
 This is a breaking change for users of the bellow functions:
