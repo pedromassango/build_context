@@ -1,3 +1,15 @@
+## [2.0.3] - 18/07/2020.
+
+Added support for:
+
+* `context.platform`
+* `context.isAndroid`
+* `context.isIOS`
+* `context.isWindows`
+* `context.isMacOS`
+* `context.isLinux`
+* `context.isFuchsia`
+* `context.closeKeyboard()`
 
 ## [2.0.2] - 09/06/2020.
 

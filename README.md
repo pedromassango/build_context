@@ -51,6 +51,13 @@ bellow you can see the currently available extensions in the latest version.
 * `context.primaryColor`
 * `context.buttonColor`
 * `context.scaffoldBackgroundColor`
+* `context.platform`
+* `context.isAndroid`
+* `context.isIOS`
+* `context.isWindows`
+* `context.isMacOS`
+* `context.isLinux`
+* `context.isFuchsia`
 
 #### From `Scaffold` class. Handle your scaffold in their `context`. 
 Note: those must be called in the context of a `Scaffold` widget otherwise you might have errors.
@@ -82,6 +89,7 @@ Note: those must be called in the context of a `Scaffold` widget otherwise you m
 * `context.focusScope.previousFocus()`
 * `context.focusScope.setFirstFocus()`
 * `context.focusScope.consumeKeyboardToken()`
+* `context.closeKeyboard()`
 
 # Install
 
@@ -89,7 +97,7 @@ Add it in your `pubspec.yaml`:
 
 ````yaml
 dependencies:
-  build_context: ^2.0.2
+  build_context: ^2.0.3
 ````
 
 Import it where you want to use it e.g, in your widget's file.
