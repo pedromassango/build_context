@@ -39,17 +39,97 @@ extension MediaQueryExt on BuildContext {
 }
 
 extension NavigatorExt on BuildContext {
-  Future<T> push<T>(Route<T> route) => Navigator.push(this, route);
+  @optionalTypeArgs
+  Future<T> push<T>(Route<T> route) => Navigator.push<T>(this, route);
 
-  void pop<T extends Object>([T result]) => Navigator.pop(this, result);
+  @optionalTypeArgs
+  Future<T> pushNamed<T extends Object>(String routeName, {Object arguments}) =>
+      Navigator.pushNamed<T>(this, routeName, arguments: arguments);
 
-  Future<Object> pushNamed<T>(String routeName, {Object arguments}) =>
-      Navigator.pushNamed(this, routeName, arguments: arguments);
+  @optionalTypeArgs
+  Future<T> pushReplacement<T extends Object, TO extends Object>(
+    Route<T> newRoute, {
+    TO result,
+  }) =>
+      Navigator.pushReplacement<T, TO>(this, newRoute, result: result);
+
+  @optionalTypeArgs
+  Future<T> pushReplacementNamed<T extends Object, TO extends Object>(
+    String routeName, {
+    TO result,
+    Object arguments,
+  }) =>
+      Navigator.pushReplacementNamed<T, TO>(
+        this,
+        routeName,
+        arguments: arguments,
+        result: result,
+      );
+
+  @optionalTypeArgs
+  Future<T> pushAndRemoveUntil<T extends Object>(
+    Route<T> newRoute,
+    RoutePredicate predicate,
+  ) =>
+      Navigator.pushAndRemoveUntil<T>(this, newRoute, predicate);
+
+  @optionalTypeArgs
+  Future<T> pushNamedAndRemoveUntil<T extends Object>(
+    String newRouteName,
+    RoutePredicate predicate, {
+    Object arguments,
+  }) =>
+      Navigator.pushNamedAndRemoveUntil<T>(
+        this,
+        newRouteName,
+        predicate,
+        arguments: arguments,
+      );
+
+  @optionalTypeArgs
+  void pop<T extends Object>([T result]) => Navigator.pop<T>(this, result);
+
+  @optionalTypeArgs
+  Future<T> popAndPushNamed<T extends Object, TO extends Object>(
+    String routeName, {
+    TO result,
+    Object arguments,
+  }) =>
+      Navigator.popAndPushNamed<T, TO>(
+        this,
+        routeName,
+        arguments: arguments,
+        result: result,
+      );
 
   bool canPop() => Navigator.canPop(this);
 
+  @optionalTypeArgs
+  Future<bool> maybePop<T extends Object>([T result]) =>
+      Navigator.maybePop<T>(this, result);
+
   void popUntil(RoutePredicate predicate) =>
       Navigator.popUntil(this, predicate);
+
+  void removeRoute(Route<dynamic> route) => Navigator.removeRoute(this, route);
+
+  void removeRouteBelow(Route<dynamic> anchorRoute) =>
+      Navigator.removeRouteBelow(this, anchorRoute);
+
+  @optionalTypeArgs
+  void replace<T extends Object>({
+    @required Route<dynamic> oldRoute,
+    @required Route<T> newRoute,
+  }) =>
+      Navigator.replace<T>(this, oldRoute: oldRoute, newRoute: newRoute);
+
+  @optionalTypeArgs
+  void replaceRouteBelow<T extends Object>({
+    @required Route<dynamic> anchorRoute,
+    Route<T> newRoute,
+  }) =>
+      Navigator.replaceRouteBelow<T>(this,
+          anchorRoute: anchorRoute, newRoute: newRoute);
 }
 
 extension ThemeExt on BuildContext {
