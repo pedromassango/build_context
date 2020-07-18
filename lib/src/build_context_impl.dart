@@ -152,4 +152,6 @@ class _FocusScope {
 
 extension FocusScopeExt on BuildContext {
   _FocusScope get focusScope => _FocusScope(this);
+
+  void closeKeyboard() => this.focusScope.requestFocus(FocusNode());
 }
