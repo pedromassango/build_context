@@ -74,7 +74,7 @@ extension ThemeExt on BuildContext {
   Color get scaffoldBackgroundColor => Theme.of(this).scaffoldBackgroundColor;
 
   AppBarTheme get appBarTheme => Theme.of(this).appBarTheme;
-  
+
   TargetPlatform get platform => Theme.of(this).platform;
 
   bool get isAndroid => this.platform == TargetPlatform.android;
