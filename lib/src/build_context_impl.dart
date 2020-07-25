@@ -9,7 +9,7 @@ extension MediaQueryExt on BuildContext {
 
   double widthPct(int percentage) => (percentage * widthPx)/ 100;
 
-  double heightPct(double percentage) => (percentage * heightPx)/ 100;
+  double heightPct(int percentage) => (percentage * heightPx)/ 100;
 
   EdgeInsets get mediaQueryPadding => MediaQuery.of(this).padding;
 
