@@ -61,6 +61,20 @@ bellow you can see the currently available extensions in the latest version.
 * `context.isLinux`
 * `context.isFuchsia`
 
+* `context.headline1`
+* `context.headline2`
+* `context.headline3`
+* `context.headline4`
+* `context.headline5`
+* `context.headline6`
+* `context.subtitle1`
+* `context.bodyText1`
+* `context.bodyText2`
+* `context.caption`
+* `context.button`
+* `context.subtitle2`
+* `context.overline`
+
 #### From `Scaffold` class. Handle your scaffold in their `context`. 
 Note: those must be called in the context of a `Scaffold` widget otherwise you might have errors.
 
