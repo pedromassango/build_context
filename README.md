@@ -93,6 +93,12 @@ Note: those must be called in the context of a `Scaffold` widget otherwise you m
 * `context.focusScope.consumeKeyboardToken()`
 * `context.closeKeyboard()`
 
+
+#### From `ModalRoute.of(context)` class.
+
+* `context.modalRoute`
+* `context.routeSettings`
+
 # Install
 
 Add it in your `pubspec.yaml`:
