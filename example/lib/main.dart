@@ -1,8 +1,8 @@
-import 'package:example/pages/focus_scope.dart';
-import 'package:example/pages/form.dart';
+import 'package:build_context/build_context.dart';
 import 'package:flutter/material.dart';
 
-import 'package:build_context/build_context.dart';
+import 'pages/focus_scope.dart';
+import 'pages/form.dart';
 
 void main() => runApp(MyApp());
 
