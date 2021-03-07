@@ -44,7 +44,7 @@ extension NavigatorExt on BuildContext {
   void pop<T extends Object>([T? result]) => Navigator.pop(this, result);
 
   Future<Object?> pushNamed<T>(String routeName, {Object? arguments}) =>
-      Navigator.pushNamed(this, routeName, arguments: arguments);
+      Navigator.pushNamed<Object?>(this, routeName, arguments: arguments);
 
   bool canPop() => Navigator.canPop(this);
 
