@@ -16,7 +16,7 @@ class FormPage extends StatelessWidget {
               children: <Widget>[
                 TextFormField(
                   validator: (text) {
-                    if (text.isEmpty) return 'Text cannot be empty';
+                    if (text!.isEmpty) return 'Text cannot be empty';
                     return null;
                   },
                 ),
