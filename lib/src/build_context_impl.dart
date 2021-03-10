@@ -195,3 +195,11 @@ extension FocusScopeExt on BuildContext {
 
   void closeKeyboard() => this.focusScope.requestFocus(FocusNode());
 }
+
+extension ModalRouteExt on BuildContext {
+
+  ModalRoute get modalRoute => ModalRoute.of(this);
+
+  RouteSettings get routeSettings => ModalRoute.of(this).settings;
+
+}
