@@ -53,6 +53,7 @@ extension NavigatorExt on BuildContext {
 }
 
 extension ThemeExt on BuildContext {
+
   ThemeData get theme => Theme.of(this);
 
   TextTheme get textTheme => Theme.of(this).textTheme;
@@ -89,31 +90,31 @@ extension ThemeExt on BuildContext {
 
   bool get isLinux => this.platform == TargetPlatform.linux;
 
-  TextStyle get headline1 => textTheme.headline1;
+  TextStyle? get headline1 => textTheme.headline1;
 
-  TextStyle get headline2 => textTheme.headline2;
+  TextStyle? get headline2 => textTheme.headline2;
 
-  TextStyle get headline3 => textTheme.headline3;
+  TextStyle? get headline3 => textTheme.headline3;
 
-  TextStyle get headline4 => textTheme.headline4;
+  TextStyle? get headline4 => textTheme.headline4;
 
-  TextStyle get headline5 => textTheme.headline5;
+  TextStyle? get headline5 => textTheme.headline5;
 
-  TextStyle get headline6 => textTheme.headline6;
+  TextStyle? get headline6 => textTheme.headline6;
 
-  TextStyle get subtitle1 => textTheme.subtitle1;
+  TextStyle? get subtitle1 => textTheme.subtitle1;
 
-  TextStyle get bodyText1 => textTheme.bodyText1;
+  TextStyle? get bodyText1 => textTheme.bodyText1;
 
-  TextStyle get bodyText2 => textTheme.bodyText2;
+  TextStyle? get bodyText2 => textTheme.bodyText2;
 
-  TextStyle get caption => textTheme.caption;
+  TextStyle? get caption => textTheme.caption;
 
-  TextStyle get button => textTheme.button;
+  TextStyle? get button => textTheme.button;
 
-  TextStyle get subtitle2 => textTheme.subtitle2;
+  TextStyle? get subtitle2 => textTheme.subtitle2;
 
-  TextStyle get overline => textTheme.overline;
+  TextStyle? get overline => textTheme.overline;
 }
 
 extension ScaffoldExt on BuildContext {
@@ -196,10 +197,10 @@ extension FocusScopeExt on BuildContext {
   void closeKeyboard() => this.focusScope.requestFocus(FocusNode());
 }
 
-extension ModalRouteExt on BuildContext {
+extension ModalRouteExt<T> on BuildContext {
 
-  ModalRoute get modalRoute => ModalRoute.of(this);
+  ModalRoute<T>? get modalRoute => ModalRoute.of<T>(this);
 
-  RouteSettings get routeSettings => ModalRoute.of(this).settings;
+  RouteSettings? get routeSettings => modalRoute?.settings;
 
 }

@@ -60,7 +60,6 @@ bellow you can see the currently available extensions in the latest version.
 * `context.isMacOS`
 * `context.isLinux`
 * `context.isFuchsia`
-
 * `context.headline1`
 * `context.headline2`
 * `context.headline3`
@@ -107,7 +106,6 @@ Note: those must be called in the context of a `Scaffold` widget otherwise you m
 * `context.focusScope.consumeKeyboardToken()`
 * `context.closeKeyboard()`
 
-
 #### From `ModalRoute.of(context)` class.
 
 * `context.modalRoute`
@@ -119,7 +117,7 @@ Add it in your `pubspec.yaml`:
 
 ````yaml
 dependencies:
-  build_context: ^2.0.4
+  build_context: ^3.0.0
 ````
 
 Import it where you want to use it e.g, in your widget's file.

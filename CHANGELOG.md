@@ -1,5 +1,27 @@
 ## [3.0.0] - 07/03/2021.
+
 * Migrated to null safety
+* Migration to ScaffoldMessenger
+
+Added support for:
+
+* `context.platform`
+* `context.headline1`
+* `context.headline2`
+* `context.headline3`
+* `context.headline4`
+* `context.headline5`
+* `context.headline6`
+* `context.subtitle1`
+* `context.bodyText1`
+* `context.bodyText2`
+* `context.caption`
+* `context.button`
+* `context.subtitle2`
+* `context.overline`
+
+* `context.modalRoute`
+* `context.routeSettings`
 
 ## [2.0.4] - 18/07/2020.
 

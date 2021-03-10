@@ -107,13 +107,18 @@ Observação: Esses devem ser chamados no contexto de um widget `Scaffold`, caso
 - `context.focusScope.consumeKeyboardToken()`
 - `context.closeKeyboard()`
 
+#### Da classe `ModalRoute.of(context)`.
+
+* `context.modalRoute`
+* `context.routeSettings`
+
 # Instalar
 
 Adicione em seu `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  build_context: ^2.0.4
+  build_context: ^3.0.0
 ```
 
 Importe onde você quer usar, por exemplo, no arquivo do widget.
