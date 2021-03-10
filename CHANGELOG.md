@@ -1,3 +1,6 @@
+## [3.0.0] - 07/03/2021.
+* Migrated to null safety
+
 ## [2.0.4] - 18/07/2020.
 
 Added support for:

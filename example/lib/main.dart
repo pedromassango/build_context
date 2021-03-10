@@ -1,8 +1,8 @@
-import 'package:example/pages/focus_scope.dart';
-import 'package:example/pages/form.dart';
+import 'package:build_context/build_context.dart';
 import 'package:flutter/material.dart';
 
-import 'package:build_context/build_context.dart';
+import 'pages/focus_scope.dart';
+import 'pages/form.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white24,
         primaryTextTheme: TextTheme(
-          title: TextStyle(color: Colors.blue),
+          headline6: TextStyle(color: Colors.blue),
         ),
       ),
       home: HomePage(),
@@ -46,14 +46,14 @@ class HomePage extends StatelessWidget {
                 onPressed: () => context.pushNamed(Routes.form),
                 child: Text(
                   'Form Example',
-                  style: context.primaryTextTheme.title,
+                  style: context.primaryTextTheme.headline6,
                 ),
               ),
               MaterialButton(
                 onPressed: () => context.pushNamed(Routes.focusScope),
                 child: Text(
                   'Focus Scope Example',
-                  style: context.primaryTextTheme.title,
+                  style: context.primaryTextTheme.headline6,
                 ),
               ),
             ],

@@ -1,10 +1,10 @@
 name: build_context
 description: A package that simplifies the access most of used properties/fuctions right in the BuildContext.
-version: 2.0.4
+version: 3.0.0
 homepage: https://github.com/pedromassango/build_context
 
 environment:
-  sdk: ">=2.6.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:

@@ -19,7 +19,7 @@ class FocusScopePage extends StatelessWidget {
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Click away from me...',
-                hintStyle: context.primaryTextTheme.subhead
+                hintStyle: context.primaryTextTheme.subtitle1!
                     .copyWith(color: context.primaryColor),
               ),
             ),
