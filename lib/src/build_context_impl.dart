@@ -3,6 +3,14 @@ import 'package:flutter/material.dart';
 extension MediaQueryExt on BuildContext {
   Size get mediaQuerySize => MediaQuery.of(this).size;
 
+  double get widthPx => mediaQuerySize.width;
+
+  double get heightPx => mediaQuerySize.height;
+
+  double widthPct(int percentage) => (percentage * widthPx)/ 100;
+
+  double heightPct(int percentage) => (percentage * heightPx)/ 100;
+
   EdgeInsets get mediaQueryPadding => MediaQuery.of(this).padding;
 
   EdgeInsets get mediaQueryViewPadding => MediaQuery.of(this).viewPadding;

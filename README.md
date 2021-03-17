@@ -14,6 +14,10 @@ bellow you can see the currently available extensions in the latest version.
 #### From the `MediaQuery`. Access properties right in the `context` instance. Available extensions:
 
 * `context.mediaQuerySize`
+* `context.widthPx`
+* `context.heightPx`
+* `context.widthPct`
+* `context.heightPct`
 * `context.orientation`
 * `context.mediaQueryPadding`
 * `context.alwaysUse24HourFormat`
