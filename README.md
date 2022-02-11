@@ -49,6 +49,7 @@ bellow you can see the currently available extensions in the latest version.
 * `context.bottomAppBarTheme`
 * `context.bottomSheetTheme`
 * `context.appBarTheme`
+* `context.colorScheme`
 * `context.backgroundColor`
 * `context.primaryColor`
 * `context.buttonColor`
