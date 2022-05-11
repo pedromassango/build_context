@@ -1,5 +1,5 @@
 name: build_context
-description: A package that simplifies the access most of used properties/fuctions right in the BuildContext.
+description: A package that simplifies the access most of used properties/functions right in the BuildContext.
 version: 3.0.0
 homepage: https://github.com/pedromassango/build_context
 
